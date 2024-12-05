@@ -1,4 +1,4 @@
-# QT5
+# QT
 
 ## Install QT5
 
@@ -13,3 +13,12 @@
 ## Error: Unknown module(s) in QT: qml quick
 
 `sudo apt install qtdeclarative5-dev`
+
+## Install QT4
+
+#### Ubuntu20.04
+`sudo add-apt-repository ppa:rock-core/qt4`
+
+`sudo apt update`
+
+`sudo apt install qt4-default`
