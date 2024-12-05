@@ -16,7 +16,11 @@ sudo apt install build-essential flex bison libssl-dev libelf-dev libncurses-dev
 sudo apt install dwarves
 ```
 
+安装 usbipd
+
 Windows USB IP drivers: https://github.com/dorssel/usbipd-win/wiki/WSL-support
+
+或在 Windows 上以管理员身份运行 PowerShell 并安装 usbipd：`winget install usbipd`
 
 Clone kernel that matches wsl version. To find the version you can run.
 
@@ -38,9 +42,9 @@ git checkout linux-msft-wsl-5.15.79.1
 Copy current configuration file.
 
 ```sh
-sudo cp /proc/config.gz config.gz
-sudo gunzip config.gz
-sudo mv config .config
+sudo cp /proc/config.gz config.gz \
+  && sudo gunzip config.gz \
+  && sudo mv config .config
 ```
 
 You may need to set CONFIG_USB=y in .config prior to running menuconfig to get all options enabled for selection.
@@ -92,41 +96,16 @@ Previously, it was recommended to enable "Debug messages for USB/IP". However, d
 In the following command the number '8' is the number of cores to use; run getconf _NPROCESSORS_ONLN to find the number of cores.
 
 ```sh
-sudo make -j 8 && sudo make modules_install -j 8 && sudo make install -j 8
-```
-
-Build USB/IP tools.
-
-```sh
-cd tools/usb/usbip
-sudo ./autogen.sh
-sudo ./configure
-sudo make install -j 8
-```
-
-Copy tools libraries location so usbip tools can get them.
-
-```sh
-sudo cp libsrc/.libs/libusbip.so.0 /lib/libusbip.so.0
-```
-
-Install usb.ids so you have names displayed for usb devices.
-
-```sh
-sudo apt install linux-tools-virtual hwdata
-```
-
-From the root of the repo, copy the image.
-
-```sh
-cp arch/x86/boot/bzImage /mnt/c/Users/<user>/usbip-bzImage
+sudo cp /proc/config.gz config.gz \
+  && sudo gunzip config.gz \
+  && sudo mv config .config
 ```
 
 Create a ```.wslconfig``` file on ```/mnt/c/Users/<user>/``` and add a reference to the created image with the following.
 
 ```pwsh
 [wsl2]
-kernel=c:\\users\\<user>\\usbip-bzImage
+kernel=c:\\users\\<user>\\...\\vmlinux
 ```
 
 ⚠️ Reset your WSL distro.
