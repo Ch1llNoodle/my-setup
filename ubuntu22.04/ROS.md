@@ -182,18 +182,19 @@ rosdep install --from-paths ./src --ignore-packages-from-source --rosdistro noet
 ```bash
 cd ~/ros_catkin_ws
 
-# Download and use fix branch
-git clone https://github.com/dreuter/rosconsole.git
-cd rosconsole
+# --- 修补 rosconsole ---
+rm -rf src/rosconsole
+git clone https://github.com/dreuter/rosconsole.git src/rosconsole
+cd src/rosconsole
 git checkout noetic-jammy
-cd ..
-mv rosconsole src
+cd ../..
 
-git clone https://github.com/dreuter/urdf.git
-cd urdf
+# --- 修补 urdf ---
+rm -rf src/urdf
+git clone https://github.com/dreuter/urdf.git src/urdf
+cd src/urdf
 git checkout set-cxx-version
-cd ..
-mv urdf src
+cd ../..
 ```
 
 ### 构建Ros1 Noetic
@@ -252,3 +253,7 @@ vcs import --input noetic-packages.rosinstall ./src
 ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release
 source ~/ros_catkin_ws/install_isolated/setup.bash
 ```
+
+
+
+form https://zhuanlan.zhihu.com/p/688413327
