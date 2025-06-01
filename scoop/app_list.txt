@@ -1,0 +1,326 @@
+{
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main",
+            "Updated": "2025-04-14T12:29:24+08:00",
+            "Manifests": 1388
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2025-04-14T12:29:13+08:00",
+            "Manifests": 2151
+        }
+    ],
+    "apps": [
+        {
+            "Updated": "2024-12-04T20:29:08.7262115+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "24.09",
+            "Name": "7zip"
+        },
+        {
+            "Updated": "2025-03-08T11:11:03.591054+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "35.0.2",
+            "Name": "adb"
+        },
+        {
+            "Updated": "2025-02-15T14:50:13.5971451+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "2024.10-1",
+            "Name": "anaconda3"
+        },
+        {
+            "Updated": "2025-02-14T23:10:33.3812784+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "25.02",
+            "Name": "anki"
+        },
+        {
+            "Updated": "2025-02-05T14:40:00.5509804+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "2.0.19",
+            "Name": "autohotkey"
+        },
+        {
+            "Updated": "2025-02-14T23:10:42.017881+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "7.37",
+            "Name": "bandizip"
+        },
+        {
+            "Updated": "2025-04-14T14:32:51.4446032+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "8.2.100",
+            "Name": "calibre"
+        },
+        {
+            "Updated": "2025-04-14T14:22:44.5600548+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "6.34.11482",
+            "Name": "ccleaner"
+        },
+        {
+            "Updated": "2025-04-14T14:36:19.9162419+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "4.0.1",
+            "Name": "cmake"
+        },
+        {
+            "Updated": "2025-04-07T21:15:04.9251476+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "10.0.0",
+            "Name": "copyq"
+        },
+        {
+            "Updated": "2024-11-21T20:59:44.7261853+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "3.14",
+            "Name": "dark"
+        },
+        {
+            "Updated": "2025-02-26T14:16:15.0528764+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "30.1",
+            "Name": "emacs"
+        },
+        {
+            "Updated": "2025-03-19T20:19:15.9697914+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "7.1.1",
+            "Name": "ffmpeg"
+        },
+        {
+            "Updated": "2025-04-07T20:29:44.4937239+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "5.0.20253.3311",
+            "Name": "fiddler"
+        },
+        {
+            "Updated": "2024-11-20T17:00:59.5566667+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "1.1.4",
+            "Name": "fluent-reader"
+        },
+        {
+            "Updated": "2025-01-18T11:51:17.5200753+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "11.0",
+            "Name": "fscapture"
+        },
+        {
+            "Updated": "2025-04-07T20:30:11.4989785+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "0.61.1",
+            "Name": "fzf"
+        },
+        {
+            "Updated": "2025-04-07T20:35:59.6272786+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "2.49.0",
+            "Name": "git"
+        },
+        {
+            "Updated": "2025-03-19T20:19:24.329494+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "2.64.3",
+            "Name": "innounp"
+        },
+        {
+            "Updated": "2025-03-03T17:34:48.0639434+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "2.5.4.38621",
+            "Name": "jetbrains-toolbox"
+        },
+        {
+            "Updated": "2025-04-07T20:36:58.6418088+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "0.11.0",
+            "Name": "neovim"
+        },
+        {
+            "Updated": "2025-04-07T20:37:21.7568144+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "23.11.0",
+            "Name": "nodejs"
+        },
+        {
+            "Updated": "2025-04-14T14:05:13.9018139+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "6.24.1221.1",
+            "Name": "notepad3"
+        },
+        {
+            "Updated": "2025-04-07T21:24:04.0468909+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "31.0.2",
+            "Name": "obs-studio"
+        },
+        {
+            "Updated": "2025-03-19T20:38:36.0616024+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "1.8.9",
+            "Name": "obsidian"
+        },
+        {
+            "Updated": "2025-04-07T21:28:31.6462517+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "3.6.4",
+            "Name": "pandoc"
+        },
+        {
+            "Updated": "2025-04-09T15:43:10.0260039+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "10.8.0",
+            "Name": "pnpm"
+        },
+        {
+            "Updated": "2025-04-07T21:28:49.9074802+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "250313",
+            "Name": "potplayer"
+        },
+        {
+            "Updated": "2025-02-15T08:27:58.0863273+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "0.83",
+            "Name": "putty"
+        },
+        {
+            "Updated": "2025-04-09T15:45:58.1237793+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "3.13.3",
+            "Name": "python"
+        },
+        {
+            "Updated": "2025-04-14T15:03:22.9516704+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "5.0.5",
+            "Name": "qbittorrent"
+        },
+        {
+            "Updated": "2025-02-05T14:56:07.9625034+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "7.7",
+            "Name": "renamer"
+        },
+        {
+            "Updated": "2025-01-03T12:34:52.7052911+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "14.1.1",
+            "Name": "ripgrep"
+        },
+        {
+            "Updated": "2025-04-14T14:47:24.5196099+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "4.7",
+            "Name": "rufus"
+        },
+        {
+            "Updated": "2025-01-18T11:57:30.4434023+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "2.0.0",
+            "Name": "scoop-search"
+        },
+        {
+            "Updated": "2025-04-07T21:29:06.8011521+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "2.10.6",
+            "Name": "snipaste"
+        },
+        {
+            "Updated": "2024-11-20T17:02:16.1411783+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "1.3.0.2",
+            "Name": "spacesniffer"
+        },
+        {
+            "Updated": "2025-04-07T21:29:28.4986339+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "15.64.3",
+            "Name": "teamviewer"
+        },
+        {
+            "Updated": "2024-11-24T10:15:39.9699063+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "0.6.1",
+            "Name": "tldr"
+        },
+        {
+            "Updated": "2025-04-07T20:23:10.1270907+08:00",
+            "Info": "Held package",
+            "Source": "extras",
+            "Version": "1.9.5",
+            "Name": "typora"
+        },
+        {
+            "Updated": "2025-04-07T21:29:36.0575656+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "0.13.1",
+            "Name": "typst"
+        },
+        {
+            "Updated": "2025-04-14T14:49:57.2067528+08:00",
+            "Info": "",
+            "Source": "main",
+            "Version": "2025.04.09",
+            "Name": "vcpkg"
+        },
+        {
+            "Updated": "2025-02-15T08:32:11.6487969+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "14.42.34438.0",
+            "Name": "vcredist2022"
+        },
+        {
+            "Updated": "2025-04-07T21:31:32.9863274+08:00",
+            "Info": "",
+            "Source": "extras",
+            "Version": "7.0.15",
+            "Name": "zotero"
+        }
+    ]
+}
