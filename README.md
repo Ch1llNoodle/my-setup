@@ -3,7 +3,7 @@
 Welcome to my central repository for managing configurations, settings, and important memos across all my devices and operating systems.
 
 This repository aims to consolidate setups for:
-- **WSL2** (Ubuntu 20.04)
+- **WSL2** (Ubuntu 20.04 18.04)
 - **Windows 11**
 - **Ubuntu 22.04**
 - **iOS**
