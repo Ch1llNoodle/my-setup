@@ -1,0 +1,250 @@
+#LOON 莫离懒人配置
+#配置地址：https://raw.githubusercontent.com/Moli-X/Tool/X/Loon/Loon.conf
+#GitHub仓库地址：https://github.com/Moli-X  发现BUG请反馈: @GodMoliibot
+#相关频道: https://t.me/QuantX
+#相关群组：https://t.me/Skill_XX
+##图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
+
+# 🟢>>>>>>>>>>>基本设置<<<<<<<<<<<<<<<🟢
+[General]
+# IP模式
+ip-mode = dual
+# IPv6 开启
+ipv6 = true
+# UDP 策略
+udp-fallback-mode = DIRECT
+allow-udp-proxy = true
+disable-stun = true
+disable-udp-ports = 443
+# 节点切换策略
+test-timeout = 2
+switch-node-after-failure-times = 2
+disconnect-on-policy-change = false
+fast-switch = true
+# 网络接口
+interface-mode = auto
+# DNS 配置
+dns-server = system,119.29.29.29,223.5.5.5,223.6.6.6,2402:4e00::,2400:3200::1,180.184.1.1,180.184.2.2
+doh-server = https://dns.alidns.com/dns-query,https://223.5.5.5/dns-query,https://223.6.6.6/dns-query,https://1.12.12.12/dns-query,https://120.53.53.53/dns-query,https://doh.pub/dns-query
+doh3-server = h3://dns.alidns.com/dns-query,h3://223.6.6.6/dns-query,h3://223.5.5.5/dns-query
+doq-server = quic://dns.alidns.com:853,quic://223.6.6.6:853,quic://223.5.5.5:853
+# 域名拦截策略
+domain-reject-mode = DNS
+# DNS拦截方式
+dns-reject-mode = LoopbackIP
+# SNI辅助规则匹配
+sni-sniffing = true
+# Wi-Fi共享配置
+allow-wifi-access = false
+wifi-access-http-port = 1234
+wifi-access-socks5-port = 1235
+mitm-on-wifi-access = false
+# 跳过代理
+skip-proxy = localhost,*.local,passenger.t3go.cn,e.crashlytics.com,captive.apple.com,app.yinxiang.com,injections.adguard.org,local.adguard.org,cable.auth.com,www.baidu.com,yunbusiness.ccb.com,teams.microsoft.com,deltaww.com.cn,book.yunzhan365.com,10.0.0.0/8,100.64.0.0/10,127.0.0.1/32,169.254.0.0/16,172.16.0.0/12,192.168.0.0/16,224.0.0.0/4,240.0.0.0/4,::1/128,fc00::/7,fd00::/8,fe80::/10,ff00::/8,2001::/32,2001:db8::/32,2002::/16,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
+# 绕过隧道
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+# 直连测试URL
+internet-test-url = http://connectivitycheck.platform.hicloud.com/generate_204,http://www.apple.com/generate_204
+# 节点测试URL
+proxy-test-url = http://www.gstatic.com/generate_204
+# Real-IP 域名
+real-ip = msftconnecttest.com,msftncsi.com,*.msftconnecttest.com,*.msftncsi.com,*.srv.nintendo.net,*.stun.playstation.net,xbox.*.microsoft.com,*.xboxlive.com,*.battlenet.com.cn,*.battlenet.com,*.blzstatic.cn,*.battle.net
+# 资源解析器
+resource-parser = https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-parser.loon.min.js
+# 数据库
+geoip-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+ipasn-url = https://github.com/Moli-X/Tool/raw/X/GeoIP/GeoLite2-ASN.mmdb
+
+# 🟢>>>>>>>>>>>其他配置<<<<<<<<<<<<<<<🟢
+[Proxy]
+
+[Rewrite]
+
+[Remote Rewrite]
+
+# 🟢>>>>>>>>>>>节点订阅<<<<<<<<<<<<<<<🟢
+[Remote Proxy]
+
+# 🟢>>>>>>>>>>>节点筛选<<<<<<<<<<<<<<<🟢
+[Remote Filter]
+# 全部节点
+Local-ALL = NameRegex,Local, FilterKey = "^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|总计|到期|机场|下次|重置|重新|设置|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
+Remote-ALL = NameRegex, FilterKey = "^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|总计|到期|机场|下次|重置|重新|设置|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic|SG)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
+# 香港
+HK = NameRegex, FilterKey = "^(?=.*((?i)🇭🇰|香港|(\b(HK|HKG|Hong|Hong Kong)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)(\d+)?\b))).*$"
+# 澳门
+MO = NameRegex, FilterKey = "^(?=.*((?i)🇲🇴|澳门|(\b(MO|MAC|Macau|Macao)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)(\d+)?\b))).*$"
+# 台湾
+TW = NameRegex, FilterKey = "^(?=.*((?i)🇹🇼|台湾|台北|(\b(TW|TWN|Tai|Taiwan|China)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)(\d+)?\b))).*$"
+# 日本
+JP = NameRegex, FilterKey = "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|JPN|Japan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)(\d+)?\b))).*$"
+# 韩国
+KR = NameRegex, FilterKey = "^(?=.*((?i)🇰🇷|韩国|韓|首尔|(\b(KR|KOR|Korea|Seoul)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)(\d+)?\b))).*$"
+# 新加坡
+SG = NameRegex, FilterKey = "^(?=.*((?i)🇸🇬|新加坡|坡|狮城|(\b(SG|SGP|Singapore)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)(\d+)?\b))).*$"
+# 美国
+US = NameRegex, FilterKey = "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|USA|United States|America)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)(\d+)?\b))).*$"
+# 英国
+UK = NameRegex, FilterKey = "^(?=.*((?i)🇬🇧|英国|伦敦|(\b(UK|GB|GBR|United Kingdom|Britain)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)(\d+)?\b))).*$"
+# 其他地区 (RA = Rest Area)
+RA = NameRegex, FilterKey = "^(?=.*(.*))(?!.*((?i)🇭🇰|🇲🇴|🇹🇼|🇯🇵|🇰🇷|🇸🇬|🇺🇸|🇬🇧|香港|澳门|台湾|日本|川日|东京|大阪|泉日|埼玉|韩国|韓|首尔|新加坡|坡|狮城|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|英国|伦敦|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|总计|到期|机场|下次|重置|重新|设置|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|网易云|回国|校园|游戏|🎮|(\b(HK|HKG|Hong|Hong Kong|MO|MAC|Macau|Macao|TW|TWN|Tai|Taiwan|JP|JPN|Japan|KR|KOR|Korea|SG|SGP|Singapore|US|USA|United States|America|UK|GB|GBR|United Kingdom|Britain|USE|USED|TOTAL|EXPIRE|EMAIL|GAME|Panel|Channel|Author|Traffic)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
+
+# 🟢>>>>>>>>>>>本地脚本<<<<<<<<<<<<<<<🟢
+[Script]
+
+# 🟢>>>>>>>>>>>功能策略<<<<<<<<<<<<<<<🟢
+[Proxy Group]
+# === 主策略 ===
+海外服务 = select,手动选择,时延优选,故障转移,负载均衡,全球节点,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
+手动选择 = select,DIRECT,Hong Kong,Taiwan,Japan,Singapore,United States,United Kingdom,Rare Areas,img-url = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/Other-Icon/Select.png
+时延优选 = url-test,Hong Kong,Taiwan,Japan,Singapore,United States,United Kingdom,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/Other-Icon/UrlTest.png
+故障转移 = fallback,Hong Kong,Taiwan,Japan,Singapore,United States,United Kingdom,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/Other-Icon/Fallback.png
+负载均衡 = load-balance,Hong Kong,Taiwan,Japan,Singapore,United States,United Kingdom,interval = 60,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/Other-Icon/LoadBalance.png
+订阅节点 = url-test,Remote-ALL,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/Other-Icon/UrlTest.png
+# === 大类分组 ===
+全球节点 = url-test,url = http://www.gstatic.com/generate_204,interval = 1800,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png
+# === 地区分组 ===
+Hong Kong = url-test,HK,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/Flag-Icon/HongKong.png
+Taiwan = url-test,TW,interval = 60,tolerance = 50,img-url = https://github.com/Moli-X/Tool/raw/X/Icon/Flag/Pixel144/Taiwan.png
+Japan = url-test,JP,interval = 60,tolerance = 50,img-url = https://github.com/Moli-X/Tool/raw/X/Icon/Flag/Pixel144/Japan.png
+Singapore = url-test,SG,interval = 60,tolerance = 50,img-url = https://github.com/Moli-X/Tool/raw/X/Icon/Flag/Pixel144/Singapore.png
+United States = url-test,US,interval = 60,tolerance = 50,img-url = https://github.com/Moli-X/Tool/raw/X/Icon/Flag/Pixel144/United_States.png
+United Kingdom = url-test,UK,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/Flag-Icon/UnitedKingdom.png
+Rare Areas = select,RA,img-url = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/Flag-Icon/UnitedNations.png
+AI = select,Taiwan,Japan,Singapore,United States,United Kingdom,img-url = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/App-Icon/ChatGPT.png
+
+# 🟢>>>>>>>>>>>本地规则<<<<<<<<<<<<<<<🟢
+[Rule]
+FINAL,故障转移
+
+# 🟢>>>>>>>>>>>规则分流<<<<<<<<<<<<<<<🟢
+[Remote Rule]
+https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr, policy=海外服务, tag=SpeedtestInternational.lsr, enabled=true
+https://kelee.one/Tool/Loon/Lsr/SpeedtestChina.lsr, policy=DIRECT, tag=SpeedtestChina.lsr, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/TeamViewer.list, policy=DIRECT, tag=远程控制, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/AppStore.list, policy=DIRECT, tag=苹果商店, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/AppleID.list, policy=DIRECT, tag=苹果账号, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Apple.list, policy=DIRECT, tag=苹果分流, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/WeChat.list, policy=DIRECT, tag=微信分流, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Lan.list, policy=DIRECT, tag=本地分流, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/GitLab.list, policy=DIRECT, tag=储存仓库, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/ChinaASN.list, policy=DIRECT, tag=ASN直连, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Gemini/Gemini.list, policy=AI, tag=Gemini.list, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/OpenAI/OpenAI.list, policy=AI, tag=OpenAI.list, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/AppleProxy.list, policy=海外服务, tag=苹果代理, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GitHub/GitHub.list, policy=时延优选, tag=GitHub.list, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Wikipedia/Wikipedia.list, policy=订阅节点, tag=Wikipedia.list, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Reddit/Reddit.list, policy=海外服务, tag=Reddit.list, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GoogleEarth/GoogleEarth.list, policy=海外服务, tag=GoogleEarth.list, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Google.list, policy=United States, tag=谷歌分流, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Spotify.list, policy=United States, tag=Spotify, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/YouTube.list, policy=Hong Kong, tag=油管视频, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Notion.list, policy=海外服务, tag=国外笔记, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Telegram.list, policy=Japan, tag=电报消息, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Twitter.list, policy=海外服务, tag=推特分流, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Facebook.list, policy=海外服务, tag=脸书分流, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Bing.list, policy=United States, tag=必应搜索, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/TestFlight.list, policy=海外服务, tag=TestFlight, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/HTTPDNS.Block.list, policy=REJECT, tag=阻止常见DNS, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Reject.list, policy=REJECT, tag=广告列表, enabled=true
+
+# 🟢>>>>>>>>>>>映射功能<<<<<<<<<<<<<<<🟢
+[Host]
+*.taobao.com = server:223.5.5.5
+*.tmall.com = server:223.5.5.5
+*.jd.com = server:119.28.28.28
+*.qq.com = server:119.28.28.28
+*.tencent.com = server:119.28.28.28
+*.alicdn.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+*.weixin.com = server:119.28.28.28
+*.163.com = server:119.29.29.29
+*.126.com = server:119.29.29.29
+*.126.net = server:119.29.29.29
+*.127.net = server:119.29.29.29
+*.netease.com = server:119.29.29.29
+*.mi.com = server:119.29.29.29
+*.xiaomi.com = server:119.29.29.29
+*.bilibili.com = server:119.29.29.29
+*testflight.apple.com = server:8.8.4.4
+mtalk.google.com = 108.177.125.188
+dl.google.com = server:119.29.29.29
+dl.l.google.com = server:119.29.29.29
+
+# 🟢>>>>>>>>>>>远程脚本<<<<<<<<<<<<<<<🟢
+[Remote Script]
+
+# 🟢>>>>>>>>>>>插件模块<<<<<<<<<<<<<<<🟢
+[Plugin]
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/MyBlockAds.lpx, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/BlockAds.lpx, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/StartUpAds.lpx, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/CMS_Adblock.lpx, enabled=true
+https://raw.githubusercontent.com/mist-whisper/Loon/master/Lpx/DailyBonus.lpx, enabled=true
+https://github.com/NSRingo/GeoServices/releases/latest/download/iRingo.Maps.plugin, enabled=true
+https://github.com/NSRingo/GeoServices/releases/latest/download/iRingo.Location.plugin, enabled=true
+https://github.com/NSRingo/Siri/releases/latest/download/iRingo.Siri.plugin, enabled=true
+https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.plugin, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/Bank.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Google.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weixin_external_links_unlock.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weixin_Official_Accounts_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/XiaoHeiHe_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/VVebo_repair.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QuarkBrowser_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/AliYunDrive_remove_ads.lpx, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/BaiduNetDisk.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BaiduMap_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/XiaomiSpeaker_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Umetrip_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/12306_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JD_Price.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/PinDuoDuo_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/smzdm_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Cainiao_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/DingdongMaicai_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/FenBi_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/WPS_Documents_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/TXDocs_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Zhihu_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/CoolApk_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Reddit_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QQ_Redirect.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Keep_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/LuckinCoffee_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/NeteaseCloudMusic_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/KuGou_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Kuwo_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/CosmosPodcast_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QuickSearch.lpx, enabled=true
+https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.plugin, enabled=true
+https://github.com/DualSubs/Universal/releases/latest/download/DualSubs.Universal.plugin, enabled=false
+https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, enabled=true
+https://github.com/Moli-X/Resources/raw/main/Sub-Store/SubStore.plugin, policy=Hong Kong, tag=节点订阅, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script-Hub.plugin, policy=Hong Kong, tag=ScriptHub, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/General.plugin, tag=配置增强, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/DNS.plugin, tag=DNS映射, enabled=true
+
+# 🟢>>>>>>>>>>>证书MITM<<<<<<<<<<<<<<🟢
+[MITM]
+hostname =
+ca-p12 = 
+ca-passphrase = 
+ca-p12 = 
+ca-passphrase = 
+skip-server-cert-verify = false

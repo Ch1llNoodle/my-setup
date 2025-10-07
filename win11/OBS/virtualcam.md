@@ -1,0 +1,1 @@
+管理员身份运行"D:\Scoop\apps\obs-studio\32.0.0\data\obs-plugins\win-dshow\virtualcam-uninstall.bat"
